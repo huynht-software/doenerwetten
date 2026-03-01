@@ -7,10 +7,16 @@
   "type": "commonjs",
   "main": "src/app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node dist/app.js",
+    "dev": "nodemon"
   },
   "dependencies": {
     "@types/express": "^5.0.6",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }
